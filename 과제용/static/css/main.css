@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+ul{
+    list-style-type:none;
+}
+#wrap{
+
+    width:1000px;
+    margin:0 auto;
+    position:relative;
+
+}
+
+
+#toph .slide_image{
+    background:url(../image/earth1.jpeg) no-repeat;
+    height:400px;
+    background-size:cover;
+    
+}
+.button1{
+    background:blue;
+    height: 20px;
+    width:50px;
+    float: left;
+    border-radius: 60px;
+}
+.button2{
+    background:red;
+    height: 20px;
+    width:50px;
+    float: left;
+    border-radius: 60px;
+}
+#button_lable .button2:nth-child(2) {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.button3 {
+    background:green;
+    height: 20px;
+    width:50px;
+    float: left;
+    border-radius: 60px;
+}
+#fix_box0{
+    position: fixed;
+    top: 250px;
+    left: 70px;
+    background-color: #23a9f7;
+    border-radius: 10px;
+}
+#fix_box0 .box1{
+    padding: 8px;
+    color: white;
+    font-weight: 550;
+}
+#fix_box0 .box2{
+    padding: 8px;
+    color: white;
+    font-weight: 550;
+}
+#fix_box0 .box3{
+    padding: 8px;
+    color: white;
+    font-weight: 550;
+}
+#fix_box0 .box4{
+    padding: 8px;
+    color: white;
+    font-weight: 550;
+}
+.font1{
+    padding: 5px 0;
+    font-size: 20px;
+}
+.font2{
+    padding: 5px 0;
+    font-size: 20px;
+}
