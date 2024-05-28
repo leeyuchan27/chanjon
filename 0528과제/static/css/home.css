@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+#wrap{
+    width:1000px;
+    position: relative;
+   
+}
+#top{
+    width:100%;
+    
+    display: inline-block;
+    
+}
+#top .papago_image{ 
+    background:url(./image/papago.ico) no-repeat;
+    width:50px;
+    height:50px;
+    background-size:cover;
+    padding:30px;
+
+}
+.papago_name{
+    padding-left: 70px;
+    
+}
