@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            height: 500px;
+            border: 2px solid black;
+            display:flex;
+            justify-content: space-between;
+            /* column-gap:50px; */
+            /* row-gap: 
+            gap: */
+            /* align-items: center; */
+            flex-direction: column; /*column하면 주축과 교차축이바뀐다.*/
+            align-items: stretch;
+        }
+         .item{
+
+            
+            /* width :  30%; */
+            height: 30px;}
+                    
+          
+     
+      
+    </style>
+</head>
+<body>
+    
+    <div id="wrap">
+        <div class="item yellow" style="background:yellow;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div class="item red" style="background:red;">b</div>
+        <div class="item blue" style="background:blue;">c</div>
+        <div class="item green" style="background:green;">d</div>
+        <div class="item violet" style="background:violet;">e</div>
+    </div>
+</body>
+</html>
+<!-- flex 브라우저 화면에서 요소(태그,텍스트,이미지)들의 배치를 위해 사용하는 기능
+부모 태그와 자식태그의 명칭
+display:flex 가 적용된 태그는 부모태그이다.
+부모태그를 flex컨테이너 라고 한다.
+자식태그를 flex item 이라고 한다.
+
+flex 로 적용할수 있는 속성(정렬,간격 배치 등등)은 컨테이너 에게 적용하는속성과 아이템에
+적용하는 속성으로 나누어져 있다.
+
+
+컨테이너(부모태그)에 적용하는 속성
+display:flex;
+
+
+정렬
+기본은 주축방향으로 (x축)
+교차축(y축)
+주축:justify-content
+-주축은 기본 컨테이너(부모태그)의 왼쪽에서 오른쪽 으로 방향으로 들어간다.
+-justify-content:start; (컨테이너의 왼쪽에 item(자식태그)을 배치한다.)
+-justify-content:center;(컨테이너의 수평 가운데에 item을 배치한다.)
+-justify-content:end;(컨테이너의 오른쪽에 item을 배치한다.)
+-:space-between; (첫번째 item과 마지막 item을 양쪽끝에 배하고 나머지 item들을 동일한 간격으로 배치한다)
+ :space-around;(양쪽끝에서 살짝띄우고 1tem 등을 동일한 간격으로 배치한다.)
+ :space-evenly;(양쪽끝에 간격과 모든 item들의 간격이 동일하게 배치된다.)
+교차축:align-items
+교차축은 flex설정 하면 기본적으로 컨테이너의 위쪽에서 아래쪽 방향으로 들어간다.
+-align-items:start; (컨테이너의 위쪽에 1tem을 배치한다.)
+-align-items:center; (컨테이너의 수직 가운데 item을 배치한다.)
+-align-items:end; (컨테이너의 아래쪽에 item을 배치한다.)
+
+flex-wrap-여러줄 배치 여부
+     nowrap-기본값(한줄 배치)
+     wrap-여러줄 배치
+    wrap-reverse-역방향으로 여러줄 배치 (첫번째 줄의 item들을 맨끝에서 배치해서 역순으로 배치)
+
+    gap:간격(행,열)
+    column-gap:열 간격
+    row-gap:행 간격
+
+
+
+
+ -------------아이템(자식태그)에 적용하는 속성------------------------------------
+ align-self:start; (center,end,stretch)
+ -해당 item이 지정한 교차축 위치에 배치된다.
+ flex-grow:n; (n은 정수 이다. n의 값에 따라 컨테이너 크기를 나누어 가진다.)
+  -flex-grow:1; 모든자식들은 1:1:1:... 비율이된다.
+  -item이 4개있다면 4분의1크기를 가지게 된다.
+
+  item이 4개 있을때
+  flex-grow:1;을 주고 특정 item에 flex-grow:3; 을 준다면
+  6분의1크기를 가지게 되고 특정item만 6분의3크기를 가지게된다.
+
+   flex-basis: 100px;/* 기본너비를 100px설정하고 내부요소가 100px넘을경우
+                                  아이템의 너비를 늘려준다. */
+    order:1: 배치순서이다. 값이 작을수록 앞쪽에 배치된다.
+             order속성이 없는 item은 기본 순서대로 배치되고 가장 앞쪽에 배치된다.
+-->
+ 
