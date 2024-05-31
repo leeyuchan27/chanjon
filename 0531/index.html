@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script type="text/javascript">
+
+        num=10;
+
+
+        apple=1203;
+        melon=234;
+
+        
+       
+        document.write(num);
+        document.write(num);
+        document.write(num);
+        document.write(num);
+       
+
+
+        document.write("나는 자바스크립트입니다.");
+
+
+        num=100;
+        document.write("<br>");
+        document.write(num*5);
+
+        width=45;
+        height=15;
+
+        document.write("<br>");
+        document.write("사각형의 너비는");
+        document.write(width);
+        document.write('높이는'+height);  
+        document.write('넓이는'+width*height);
+
+        //국어89 영어94 수학78
+        //총점 261점
+        kor=89;
+        eng=94;
+        mat=78;
+        c=kor+eng+mat;
+
+        document.write('<br>'+'<br>'+'국어'+kor+'<br>');
+        document.write('영어'+eng+'<br>');
+        document.write('수학'+mat+'<br>');
+        document.write('총점'+ (c)+'점');
+        
+        document.write('<hr>');
+//커피 총 주문 금액 과 수박주스 총 주문 금액 출력
+// 음료 총 주문 금액 출력
+        커피주문=3;
+        수박주스주문=4;
+        아메리카노=1500;
+        수박주스=2000;
+//문자쓸때는 '',""써야되고,계산은 소괄호
+
+        document.write('커피총주문금액:'+(아메리카노*커피주문)+',수박주스총주문금액:'+(수박주스*수박주스주문)+'<br>');
+        document.write('음료총주문금액:'+(아메리카노*커피주문+수박주스*수박주스주문));
+
+
+        //변수의 이해
+        redCup=10;
+        blueCup=20;
+        whiteCup=0;
+
+        whiteCup=redCup;
+        redCup=blueCup;
+        blueCup=whiteCup;
+
+/* 변수-데이터 저장된, 저장될수 있는 메모리(ram)공간*/
+
+        // 데이터 입력 방법 1.
+        //prompt를 통해서 데이터를 입력할 수 있다.
+        //prompt로 입력한 데이터는 문자열이다.
+        //숫자로 계산하려면 숫자로 강제 변환을 해야한다.
+        //숫자로 변환이 가능한 문자열 만 할 수 있다.
+        //'50'
+        //parselnt(문자열)-> 정수로변환, '50aaa'->50
+        //parseFloat(문자열)-> 실수로변환
+        //Number(문자열)-> 숫자로변환, 문자열에 단하나의 문자도 있으면 안된다.
+
+        // kor=parseInt( prompt('국어점수') );
+        // mat=parseInt( prompt('수학점수') );
+        // eng=Number( prompt('영어점수') );
+        // total=kor+mat+eng;
+
+
+        // document.write('<br>국어:'+kor+'수학:'+mat+'영어:'+eng);
+        // document.write('<br>총점:'+total);
+
+       
+        //실습 3
+        //이름과 거주 도시명, 생년월일을 입력하여 출력하세요.
+        
+        
+
+        name=( prompt('이름을 입력하세요.') );
+        city=( prompt('거주도시명을 입력하세요.') );
+        since=( prompt('생년월일을 입력하세요.') );
+
+        document.write('<br>이름:'+name+'입니다.<br>');
+        document.write('거주도시명:'+city+'입니다.<br>');
+        document.write('생년월일:'+since+'입니다.');
+        
+        
+        //상수명-> 모두 대문자
+
+      
+
+
+
+
+    </script>
+
+</head>
+<body>
+    
+    
+</body>
+</html>
