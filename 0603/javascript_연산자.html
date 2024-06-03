@@ -174,11 +174,11 @@
 
 //랜덤 함수를 사용하여 (1~50)중의 숫자 두개를 받으세요.
 //숫자 두개의 곱하기 값이 1200 이상이면 큰수 아니면 작은수라고 출력하세요
-card1=Math.floor(Math.random()*50)+ 1;
-card2=Math.floor(Math.random()*50)+ 1;
-card3=card1*card2;
-출력내용=(card3>=1200)? "큰수":"작은수";
-document.write(출력내용);
+// card1=Math.floor(Math.random()*50)+ 1;
+// card2=Math.floor(Math.random()*50)+ 1;
+// card3=card1*card2;
+// 출력내용=(card3>=1200)? "큰수":"작은수";
+// document.write(출력내용);
 
 //과제1
 //소주1잔에 수명이 2분 단축된다.
@@ -190,6 +190,15 @@ document.write(출력내용);
 
 //과제2
 //두개의 주사위를 던져서 같은값이 나온다면 당첨,아니라면 꽝 출력
+dice1=Math.floor(Math.random()*6)+ 1;
+dice2=Math.floor(Math.random()*6)+ 1;
+같은값=(dice1==dice2)?"당첨":"꽝";
+
+document.write("첫번째주사위:"+dice1+","+"두번째주사위:"+dice2+"<br>");
+document.write("결과:"+같은값);
+
+
+
 
 
 
