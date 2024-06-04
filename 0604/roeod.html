@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+// //cpt-customerParkingTime 고객주차시간
+//         cost=1000;
+//         parkingTime=3;
+//         add=100;
+
+//         cpt=Number(prompt("총 주차시간 몇분")); //35
+
+//        cost=( cpt>=120)?1700:cost;
+//        cost=( cpt>=240)?2700:cost;
+
+//        parkingTime=(cpt>=120)? 12:parkingTime;
+
+
+//         time=Math.floor(cpt/10);
+
+//        price=( time<=parkingTime )? cost:cost+(time-parkingTime)*add;
+        
+//        document.write(`주차시간:${cpt}분,주차비:${price}원<br>`);
+
+
+        //논리 연산자 &&(and),||(or),!(not)
+        //연산자 는 두개의 피연산자 사이에 배치된다.
+        //논리 연산자는 참과 거짓을 피연산자로 사용하는연산자이다.
+        //두개 이상의 조건식을 사용하는 경우에 논리연산자(&&,||) 을 사용한다.
+        //10 && 5(이거아님),(10>3)&&(5>10)
+        //&&(and)-참 && 참    결과:참
+        //        참 && 거짓  결과:거짓
+        //        거짓 && 참  결과:거짓
+        //        거짓&&거짓  결과:거짓
+        //||(or)- 참||참 결과:참
+        //        참||거짓 결과:참
+        //        거짓||참 결과:참
+        //        거짓||거짓 결과:거짓
+
+        //바이킹 타는 조건은 키가150이상 190이하 만 가능
+        //(키>=150) && (키<=190)
+        // 두개의 주사위를 던져서 합이4 이거나 9라면 당첨이다
+        //(합==4) || ((합==9)&&(조건식)) ||(조건식)
+
+        //범퍼카 탑승 조건:키130이상탑승가능
+        //                 키가110이상일경우 부모동반하면탑승가능
+        //(키>=130)|| ((키>=110)&&(부모==동반))
+
+        //무한리필 고깃집: 운동선수2명이상 입장불가
+                    // 하지만 중학생까지는 입장가능
+                    // 몸무게 140키로 이상입장불가
+
+        //((운동선수<2) ||(운동선수<=중학생))&&(몸무게<140)       
+
+        //not 연산자
+
+        사과=10;
+
+        document.write( (사과>=1)?"판매중":"품절"   );
+        document.write("<hr>");
+        document.write( (!사과)?"품절":"판매중" );
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
