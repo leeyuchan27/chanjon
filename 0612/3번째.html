@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $("#inputBt").click(join);
+            $(document).keyup(function(e){
+                if(e.keyCode===13){
+                    join();
+                }
+            });
+
+        });
+        function join(){
+            var userId=$("#id").val();
+            var userPw=$("#pw").val();
+            var userBirth=$("#birth").val();
+
+            var isCheck=allInputCheck(userId,userPw,userBirth);
+
+            isCheck=isCheck? birthCheck( userBirth):isCheck;
+
+            if(isCheck){
+            $("#check").html(`<div>아이디: ${userId}</div> <div>비밀번호: ${userPw}</div>
+            <div>생년월일:${userBirth}</div>`);
+            }
+        }
+        function birthCheck(birth){
+            
+            if(birth.length==8) return true;
+            alert("생년월일을 8자리로 입력하세요");
+            $("#birth").val('');
+            $("#birth").focus();
+
+            return false;
+        }
+        function allInputCheck(Id,Pw,Birth){
+
+            if(Id===''){
+                alert("아이디를 입력하세요");
+                $("#id").focus();
+                return false;
+            }else if(Pw===''){
+                alert("비밀번호 입력하세요");
+                $("#pw").focus();
+                return false;
+            }else if(Birth===''){
+                alert("생년월일을 입력하세요");
+                $("#birth").focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <label>아이디</label><input type="text" id="id">    <br>
+    <label>비밀번호</label><input type="password" id="pw">  <br>
+    <label>생년월일</label><input type="text" id="birth" placeholder="생년월일 8자리 입력하세요">
+    <br> <button id="inputBt">입력</button>
+    <div id="check">
+
+    </div>
+
+</body>
+</html>
