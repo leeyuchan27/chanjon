@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./static/javascript/rps.js"></script>
+    <link rel="stylesheet" href="./static/css/rps.css">
+    <script>
+        //각팀별 다음중 하나를 선택하여 개발
+
+    1.지렁이 게임
+    1단계부터 3단계까지
+    화면에 일정수의 먹이를 표시한다
+    지렁이가 방향키에 따라 움직이며 먹이를 먹으면 꼬리가 길어진다.
+    단계별 난이도는 지렁이 움직이는 속도업,장애물추가
+    제한시간동안 살아남으면 다음단계
+
+    2.미니게임
+    동전앞면뒷면 맞추기
+    가위바위보
+    빙고
+    만들고싶은거 게임만들기
+    총4개의 게임을 선택하여 진행한다. 뒤로가기를 통해 다른게임선택가능
+    
+
+
+
+
+    </script>
+</head>
+<body>
+
+    <div id="buttonWrap">
+        <button id="game">시작</button>
+        <button id="record">전적</button>
+    </div>
+    <div id="wrap">
+        <div id="comArea" class="area">
+            <div class="rpsImg">
+                <img id="comImg">
+            </div>
+        </div>
+        <div id="userArea" class="area">
+            <div class="rpsImg">
+                <div class="userImg"><img src="./static/image/scissors.png" alt=""></div>
+                <div class="userImg"><img src="./static/image/rock.png" alt=""></div>
+                <div class="userImg"><img src="./static/image/paper.png" alt=""></div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
